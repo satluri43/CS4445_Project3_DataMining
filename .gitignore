@@ -1,0 +1,12 @@
+# Generated output images
+plots/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Data (optional – remove if you want to track the CSV)
+# *.csv
