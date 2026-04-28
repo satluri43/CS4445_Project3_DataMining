@@ -45,8 +45,9 @@ def sse(X, labels):
   for lbl in np.unique(labels):
     if lbl == -1:
       continue
-      mask = labels == lbl
-      total += np.sum((X[mask] - X[mask].mean(axis=0)) ** 2)
+    
+    mask = labels == lbl
+    total += np.sum((X[mask] - X[mask].mean(axis=0)) ** 2)
 
   return total
 
